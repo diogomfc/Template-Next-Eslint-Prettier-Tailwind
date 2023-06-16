@@ -1,7 +1,17 @@
 ## Configurando ESLint + Prettier + Tailwind 
 
-npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-standard eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-n eslint-plugin-promise eslint-plugin-react eslint-plugin-react-hooks eslint-config-prettier eslint-plugin-prettier prettier prettier-plugin-tailwindcss eslint-plugin-import-helpers
 
+## 🚀 Primeiros passos
+
+A melhor maneira de começar com este modelo é usando `create-next-app`.
+
+```
+npx create-next-app@latest project-name --use-npm
+```
+```
+npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-standard eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-n eslint-plugin-promise eslint-plugin-react eslint-plugin-react-hooks eslint-config-prettier eslint-plugin-prettier prettier prettier-plugin-tailwindcss eslint-plugin-import-helpers
+```
+##  Resumo dos plugins
 - [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser) : é um analisador de código-fonte TypeScript para o Eslint. Ele permite que o Eslint entenda e analise arquivos TypeScript, para que você possa aplicar regras de linting ao código TypeScript em seu projeto
 
 - [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) : Estende a funcionalidade do Eslint para fornecer suporte de linting específico para o TypeScript.
@@ -29,7 +39,9 @@ npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-confi
 - [prettier-plugin-tailwindcss](https://github.com/hudochenkov/prettier-plugin-tailwindcss) : Um plugin do Prettier que melhora a formatação de código relacionado ao Tailwind CSS, um framework de CSS.
 
 - [eslint-plugin-import-helpers](https://github.com/Tibfib/eslint-plugin-import-helpers) : é um plugin útil para garantir uma organização consistente das importações em seu código JavaScript, o que pode melhorar a legibilidade, a manutenção e a colaboração em projetos.
+##
 
+Criar um arquivo `.eslintrc.js` na raiz do seu projeto com o codigo de configuração abaixo:
 ```js
    // .eslintrc.js
    module.exports = {
@@ -116,6 +128,8 @@ npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-confi
   },
 }
 ```
+Criar um arquivo `.prettier.config.js` na raiz do seu projeto com o codigo de configuração abaixo:
+
 ```js
    // .prettier.config.js
    module.exports = {
@@ -123,3 +137,17 @@ npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-confi
 }
 
    ```
+
+Se preferir você pode clonar este repositório:
+
+```
+npx create-next-app project-name -e https://github.com/diogomfc/Template-Next-Eslint-Prettier-Tailwind
+```
+
+e rodar os seguintes comandos dentro da pasta do projeto
+
+1. `npm install` or `yarn`;
+2. `npm run dev` or `yarn dev`;
+
+
+
